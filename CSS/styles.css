@@ -126,6 +126,8 @@
   max-width: 80%;
   max-height: 50%;
   border-radius: 5%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 .info-text {
@@ -151,6 +153,19 @@
 
 .footer-links {
   fill: #5e5e5e;
+}
+
+/* ------------------------Kontaktformulär------------------------  */
+.contact-form-container {
+  max-width: 700px;
+
+  margin: 100px auto;
+}
+.contact-form {
+  /* max-width: 80%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* ------------------------Media query för mindre skärmar------------------------  */
@@ -205,5 +220,14 @@
   }
   .info-text {
     line-height: 1.5;
+  }
+  .reveal {
+    position: relative;
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .reveal.active {
+    opacity: 1;
   }
 }
