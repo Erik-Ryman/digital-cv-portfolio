@@ -35,7 +35,7 @@
 .nav-container {
   display: flex;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 2rem;
 }
 .nav-link {
   text-decoration: none;
@@ -56,21 +56,25 @@
 /* ------------------------ Greeting under Nav ------------------------ */
 
 .greet-container {
-  margin-top: 120px;
+  margin-top: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
   text-align: center;
   line-height: 1.5;
 }
-.greet-title {
+.greet-title,
+.contact-title {
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 0.2rem;
 }
-.greet-subtitle {
+.greet-subtitle,
+.contact-subtitle {
   color: var(--blue);
   font-style: italic;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 .greet-description {
   max-width: 40%;
@@ -156,16 +160,21 @@
 }
 
 /* ------------------------Kontaktformulär------------------------  */
-.contact-form-container {
+.contact-container {
   max-width: 700px;
-
-  margin: 100px auto;
-}
-.contact-form {
-  /* max-width: 80%; */
+  margin: 6rem auto 3rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+}
+.contact-title {
+  margin-bottom: 2rem;
+}
+
+.contact-icon {
+  max-width: 20rem;
+  margin: 0 auto;
 }
 
 /* ------------------------Media query för mindre skärmar------------------------  */
@@ -210,6 +219,9 @@
     grid-template-columns: repeat(1, 1fr);
     max-width: 90%;
   }
+  .greet-title {
+    letter-spacing: normal;
+  }
   .info-content {
     font-size: 1rem;
     gap: 1rem;
@@ -229,5 +241,16 @@
 
   .reveal.active {
     opacity: 1;
+  }
+  .contact-container {
+    max-width: 90%;
+    margin: 3rem auto 1rem auto;
+  }
+  .contact-title {
+    letter-spacing: normal;
+  }
+  .contact-subtitle {
+    font-weight: 500;
+    font-size: 1.1rem;
   }
 }
