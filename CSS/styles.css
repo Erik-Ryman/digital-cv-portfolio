@@ -5,8 +5,8 @@
   --darkBlue: #3458ea;
   --gradientLight: linear-gradient(
     125deg,
-    rgba(219, 184, 254, 1) 20%,
-    rgba(145, 167, 255, 1) 80%
+    rgb(199, 166, 216) 20%,
+    rgb(112, 128, 195) 80%
   );
   --gradientDark: linear-gradient(
     125deg,
@@ -189,6 +189,42 @@
   margin: 0 auto;
 }
 
+/* ---------------------------- CV ------------------------------ */
+
+.carousel {
+  width: 800px;
+  padding: 32px 48px 32px 86px;
+  margin: 100px auto;
+  border-radius: 8px;
+  background: var(--gradientLight);
+  display: flex;
+  align-items: center;
+  gap: 86px;
+  position: relative;
+}
+.carousel-img {
+  height: 220px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+.testimonial-text {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #fff;
+}
+.testimonial-author {
+  font-size: 0.9em;
+  margin-bottom: 4px;
+  color: #fff;
+}
+.testimonial-job {
+  color: #fff;
+  font-size: 0.8em;
+}
+
 /* ------------------------Media query för mindre skärmar------------------------  */
 
 @media (max-width: 1200px) {
@@ -340,5 +376,18 @@
     position: absolute;
     top: 2.5rem;
     left: 2rem;
+    font-size: 1.2rem;
+  }
+
+  /* ----------------------------------------CV ---------------------------------------- */
+
+  .carousel {
+    width: 60%;
+    flex-direction: column;
+    padding: 96px 32px 32px 32px;
+    gap: 105px;
+  }
+  .carousel-img {
+    transform: scale(1.7);
   }
 }
