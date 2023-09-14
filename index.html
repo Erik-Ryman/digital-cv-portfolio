@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,27 +13,31 @@
     />
   </head>
   <body>
-    <nav class="nav-bar">
-      <a class="nav-link" href="index.html">
-        <div class="nav-erik">Erik Ryman</div></a
-      >
-      <label class="hamburger-menu">
-        <input type="checkbox" />
-      </label>
-      <div class="nav-container">
-        <a class="nav-link" href="index.html"
-          ><div class="nav-button">Om mig</div></a
+    <header>
+      <nav class="nav-bar">
+        <a class="nav-link" href="index.html">
+          <div class="nav-erik">Erik Ryman</div></a
         >
-        <a class="nav-link" href="cv.html"><div class="nav-button">CV</div></a>
-        <a class="nav-link" href="portfolio.html"
-          ><div class="nav-button">Portfolio</div></a
-        >
-        <a class="nav-link" href="contact.html"
-          ><div class="nav-button">Kontakt</div></a
-        >
-      </div>
-    </nav>
-    <div class="main">
+        <label class="hamburger-menu">
+          <input type="checkbox" />
+        </label>
+        <div class="nav-container">
+          <a class="nav-link" href="index.html"
+            ><div class="nav-button">Om mig</div></a
+          >
+          <a class="nav-link" href="cv.html"
+            ><div class="nav-button">CV</div></a
+          >
+          <a class="nav-link" href="portfolio.html"
+            ><div class="nav-button">Portfolio</div></a
+          >
+          <a class="nav-link" href="contact.html"
+            ><div class="nav-button">Kontakt</div></a
+          >
+        </div>
+      </nav>
+    </header>
+    <main class="main">
       <section class="greet-container">
         <h1 class="greet-title">Hej, jag heter Erik!</h1>
         <p class="greet-subtitle">Student - Webbutvecklare .Net</p>
@@ -44,67 +48,61 @@
           tidningar.
         </p>
       </section>
-      <section class="info-container">
-        <div class="carousel left">
-          <img
-            class="carousel-img"
-            src="./images/Misc/coding2.jpg"
-            alt="Erik Ryman"
-          />
-          <blockquote class="testimonial">
-            <p class="testimonial-text testimonial-margin">
-              Programmering är något jag tycker är väldigt intressant. Det finns
-              alltid nya koncept och tekniker att lära sig. Men det absolut
-              roligaste för mig är all problemlösning.
-            </p>
-          </blockquote>
-        </div>
+      <div class="carousel left">
+        <img
+          class="carousel-img"
+          src="./images/Misc/coding2.jpg"
+          alt="Erik Ryman"
+        />
+        <blockquote class="testimonial">
+          <p class="testimonial-text testimonial-margin">
+            Programmering är något jag tycker är väldigt intressant. Det finns
+            alltid nya koncept och tekniker att lära sig. Men det absolut
+            roligaste för mig är all problemlösning.
+          </p>
+        </blockquote>
+      </div>
 
-        <div class="carousel">
-          <img
-            class="carousel-img"
-            src="./images/Misc/fotosidan magasin nr 6 2019.jpg"
-            alt="Erik Ryman"
-          />
-          <blockquote class="testimonial">
-            <p class="testimonial-text testimonial-margin">
-              Jag har talang för fotografering och har blivit publicerad samt
-              vunnit medalj i riksfotoutställningen som är en nationell
-              utställning. Jag tog omslagsbilden på Fotosidan Magasin nummer
-              6/2019. Bilden visar fyren Långe Erik på Öland.
-            </p>
-          </blockquote>
-        </div>
-        <div class="carousel left">
-          <img
-            class="carousel-img"
-            src="./images/Misc/3d.jpg"
-            alt="Erik Ryman"
-          />
-          <blockquote class="testimonial">
-            <p class="testimonial-text testimonial-margin">
-              3D printing är något jag alltid tyckt är facinerande. Att kunna
-              skapa objekt man själv eller andra tagit fram är helt fantastiskt,
-              och med egen 3D skrivare är det smidigt också.
-            </p>
-          </blockquote>
-        </div>
-        <div class="carousel">
-          <img
-            class="carousel-img"
-            src="./images/Misc/gym2.jpg"
-            alt="Erik Ryman"
-          />
-          <blockquote class="testimonial">
-            <p class="testimonial-text testimonial-margin">
-              Att ta hand om kropp och själ är viktigt för mig. Jag spenderar
-              mycket tid ute i naturen och går till gymmet fyra dagar i veckan
-              för att uppnå mina mål.
-            </p>
-          </blockquote>
-        </div>
-      </section>
-    </div>
+      <div class="carousel">
+        <img
+          class="carousel-img"
+          src="./images/Misc/fotosidan.jpg"
+          alt="Erik Ryman"
+        />
+        <blockquote class="testimonial">
+          <p class="testimonial-text testimonial-margin">
+            Jag har talang för fotografering och har blivit publicerad samt
+            vunnit medalj i riksfotoutställningen som är en nationell
+            utställning. Jag tog omslagsbilden på Fotosidan Magasin nummer
+            6/2019. Bilden visar fyren Långe Erik på Öland.
+          </p>
+        </blockquote>
+      </div>
+      <div class="carousel left">
+        <img class="carousel-img" src="./images/Misc/3d.jpg" alt="Erik Ryman" />
+        <blockquote class="testimonial">
+          <p class="testimonial-text testimonial-margin">
+            3D printing är något jag alltid tyckt är facinerande. Att kunna
+            skapa objekt man själv eller andra tagit fram är helt fantastiskt,
+            och med egen 3D skrivare är det smidigt också.
+          </p>
+        </blockquote>
+      </div>
+      <div class="carousel">
+        <img
+          class="carousel-img"
+          src="./images/Misc/gym2.jpg"
+          alt="Erik Ryman"
+        />
+        <blockquote class="testimonial">
+          <p class="testimonial-text testimonial-margin">
+            Att ta hand om kropp och själ är viktigt för mig. Jag spenderar
+            mycket tid ute i naturen och går till gymmet fyra dagar i veckan för
+            att uppnå mina mål.
+          </p>
+        </blockquote>
+      </div>
+    </main>
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-links">
@@ -154,6 +152,5 @@
         </div>
       </div>
     </footer>
-    <script src="./JS/script.js"></script>
   </body>
 </html>
