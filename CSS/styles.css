@@ -57,11 +57,6 @@
   color: var(--blue);
 }
 
-.nav-erik {
-  color: var(--blue);
-  cursor: default;
-}
-
 .hamburger-menu {
   display: none;
 }
@@ -87,6 +82,7 @@
 .contact-title {
   font-weight: 700;
   letter-spacing: 0.2rem;
+  text-decoration: none;
 }
 .greet-subtitle,
 .contact-subtitle {
@@ -94,6 +90,7 @@
   font-style: italic;
   font-weight: 500;
   font-size: 1.2rem;
+  text-decoration: none;
 }
 .greet-description {
   max-width: 40%;
@@ -360,6 +357,7 @@
     left: 0;
     transition: translate var(--animation-timing);
     opacity: 0;
+    display: none;
     padding: 8rem 0 4rem 0;
     background-color: #fff;
     width: 100%;
@@ -370,6 +368,7 @@
   }
   .hamburger-menu:has(input:checked) + .nav-container {
     opacity: 100;
+    display: flex;
   }
   .nav-erik {
     position: absolute;
