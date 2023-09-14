@@ -313,9 +313,9 @@
     height: var(--bar-height);
     background-color: var(--foreground);
     border-radius: 1000px;
-    transform-origin: right center;
-    transition: opacity var(--animation-timing), width var(--animation-timing),
-      rotate var(--animation-timing), translate var(--animation-timing);
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), rotate var(--animation-timing),
+      translate var(--animation-timing);
   }
 
   .hamburger-menu input {
@@ -327,20 +327,19 @@
   }
 
   .hamburger-menu:has(input:checked)::before {
-    rotate: -45deg;
+    rotate: 45deg;
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / -2);
   }
 
   .hamburger-menu:has(input:checked)::after {
-    rotate: 45deg;
+    rotate: -45deg;
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / 2);
   }
 
   .hamburger-menu input:checked {
     opacity: 0;
-    width: 0;
   }
 
   .nav-link {
