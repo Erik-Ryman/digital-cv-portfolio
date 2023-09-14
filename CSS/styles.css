@@ -1,6 +1,5 @@
 :root {
-  --blue: rgb(186, 130, 255);
-  /* --blue: #91a7ff; */
+  --blue: #7553ff;
   --white: #edf2ff;
   --text: #000;
   --darkBlue: #3458ea;
@@ -51,10 +50,16 @@
   text-decoration: none;
   margin-right: auto;
   color: var(--text);
+  font-size: 1.2rem;
 }
 
 .nav-link:hover {
   color: var(--blue);
+}
+
+.nav-erik {
+  color: var(--blue);
+  cursor: default;
 }
 
 .hamburger-menu {
@@ -88,7 +93,7 @@
   color: var(--blue);
   font-style: italic;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .greet-description {
   max-width: 40%;
