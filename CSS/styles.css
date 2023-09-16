@@ -194,7 +194,7 @@
   font-size: 2.5rem;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .work,
@@ -213,17 +213,22 @@
 .education-title {
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 .work-date,
 .education-date {
   color: #eaeaea;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 .work-description,
 .education-description {
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.work-description:last-child,
+.education-description:last-child {
+  margin-bottom: 0;
 }
 
 /* ---------------------------- PORTFOLIO ------------------------------ */
@@ -399,7 +404,7 @@
 
   .work-declaration,
   .education-declaration {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .work-title,
   .education-title {
