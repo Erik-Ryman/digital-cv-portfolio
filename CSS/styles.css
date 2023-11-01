@@ -296,8 +296,12 @@
     font-weight: 500;
     font-size: 1.1rem;
   }
+
   /* ///////////////////// Hamburger style nav /////////////////////////// */
+
+  /* Själva hamburgaren  */
   .hamburger-menu {
+    /* Genom att ta hamburgarens höjd genom roten ur 2 vet vi hur breda de roterande linjerna ska vara för att forma ett perfekt kryss. Eftersom vi använder en 45 graders vinkel. */
     --x-width: calc(var(--hamburger-height) * 1.41421356237);
     display: flex;
     flex-direction: column;
@@ -310,19 +314,23 @@
     cursor: pointer;
   }
 
+  /* Detta skapar de tre linjerna från checkpointen */
   .hamburger-menu input,
   .hamburger-menu::before,
   .hamburger-menu::after {
+    /* Empty string på content gör att de syns, sen formar vi linjerna genom width, height, gap, rafius samt bg-color. */
     content: "";
     width: var(--bar-width);
     height: var(--bar-height);
     background-color: var(--foreground);
     border-radius: 1000px;
+    /* Detta bestämmer var våran animation startar, sedan använder vi transition för att sätta vad som ska animeras och alla får samma värde genom variabeln animation-timing */
     transform-origin: left center;
     transition: opacity var(--animation-timing), rotate var(--animation-timing),
       translate var(--animation-timing);
   }
 
+  /* Detta gör själva checkpointen osynlig så man bara ser de tre linjerna */
   .hamburger-menu input {
     appearance: none;
     padding: 0;
@@ -331,30 +339,36 @@
     pointer-events: none;
   }
 
+  /* Detta roterar och ändrar längd på översta linjen för att forma krysset */
   .hamburger-menu:has(input:checked)::before {
     rotate: 45deg;
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / -2);
   }
 
+  /* Detta roterar och ändrar längd på understa linjen för att forma krysset */
   .hamburger-menu:has(input:checked)::after {
     rotate: -45deg;
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / 2);
   }
 
+  /* Detta gör mitten linjen osynlig när man trycker på menyn */
   .hamburger-menu input:checked {
     opacity: 0;
   }
 
+  /* Centrera meny alternativen och samtidigt separera med margin bottom  */
   .nav-link {
     margin: 0 auto 2rem auto;
   }
 
+  /* Ta bort margin bottom från sista menyalternativet så spacing inte ser konstigt ut  */
   .nav-link:last-child {
     margin-bottom: 0;
   }
 
+  /* Containern som innehåller menyalternativen  */
   .nav-container {
     position: absolute;
     top: 0;
@@ -370,10 +384,14 @@
     font-size: 1.2rem;
     z-index: 1;
   }
+
+  /* När menyknappen är aktiverad så visas menyalternativen  */
   .hamburger-menu:has(input:checked) + .nav-container {
     opacity: 100;
     display: flex;
   }
+
+  /* Detta ser till att mitt namn alltid syns oavsett om menyn är aktiverad eller ej  */
   .nav-erik {
     position: absolute;
     top: 2.5rem;
