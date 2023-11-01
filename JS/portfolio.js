@@ -5,9 +5,8 @@ const displayPortfolio = () => {
     const html = `<div class="portfolio-container">
     <p class="portfolio-description">${obj.description} <a
     class="portfolio-link"
-    href=${obj.link}
-    target="_blank">${obj.name}</a
-    >.
+    href=${obj.link} target="_blank"
+    >${obj.name}</a>.
     </p>
     <img
     class="portfolio-img"
@@ -26,6 +25,13 @@ const projects = [
     name: "Lucky Duck",
     link: "https://erik-ryman.github.io/Restaurang-Lucky-Duck/",
     image: "./images/Misc/luckyDuck.png",
+  },
+  {
+    description:
+      "Här var uppgiften att med local storage (Bella / qwe123) tillverka en",
+    name: "inloggnings funktion",
+    link: "https://erik-ryman.github.io/LOGIN/",
+    image: "./images/Misc/login.png",
   },
   {
     description:
