@@ -6,8 +6,7 @@ const displayPortfolio = () => {
     <p class="portfolio-description">${obj.description} <a
     class="portfolio-link"
     href=${obj.link} target="_blank"
-    >${obj.name}</a
-    >.
+    >${obj.name}</a>.
     </p>
     <img
     class="portfolio-img"
